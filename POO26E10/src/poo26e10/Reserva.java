@@ -85,7 +85,7 @@ public class Reserva {
             estado= EstadoReserva.levantada;
         }
     }
-
+    
     public boolean validar() {
         return idReserva != null && !idReserva.isEmpty()
                 && dataReserva != null

@@ -52,10 +52,7 @@ public class Refeicao {
 
 
 		@Override
-		public String toString() {
-			return "Refeicao [idRefeicao=" + idRefeicao + ", preco=" + preco + ", quantDisponivel=" + quantDisponivel
-					+ ", produto=" + produto + "]";
-		}
+		public String toString() { return "Nome: " + produto.getNome() + "\nPreço: " + preco + "€\nDisponível: " + quantDisponivel; }
 		
 		
 }

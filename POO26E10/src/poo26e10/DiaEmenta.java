@@ -28,9 +28,7 @@ public class DiaEmenta {
     public void setRefeicoes(ArrayList<Refeicao> refeicoes) {
         this.refeicoes = refeicoes;
     }
-
+    
     @Override
-    public String toString() {
-        return "DiaEmenta{" + "data=" + data + ", refeicoes=" + refeicoes + '}';
-    }
+    public String toString() { return "Data: " + data + "\nRefeições: " + refeicoes; }
 }

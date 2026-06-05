@@ -51,12 +51,6 @@ public class Aviso {
     }
 
     @Override
-    public String toString() {
-        return "Aviso{" +
-                "idAviso='" + idAviso + '\'' +
-                ", mensagem='" + mensagem + '\'' +
-                ", destinatario='" + destinatario + '\'' +
-                ", dataEnvio=" + datEnvio +
-                '}';
-    }
+    public String toString() { 
+    	return "ID: " + idAviso + "\nMensagem: " + mensagem + "\nDestinatário: " + destinatario + "\nData: " + datEnvio; }
 }

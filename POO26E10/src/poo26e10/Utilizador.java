@@ -99,8 +99,7 @@ public class Utilizador {
 
 	@Override
 	public String toString() {
-		return "Utilizador [nome=" + nome + ", numId=" + numId + ", email=" + email + ", password=" + password
-				+ ", tipo=" + tipo + "]";
+	    return "Nome: " + nome + "\nID: " + numId + "\nEmail: " + email + "\nTipo: " + tipo;
 	}
 	
 	

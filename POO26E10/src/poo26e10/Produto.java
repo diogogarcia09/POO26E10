@@ -5,7 +5,7 @@ public class Produto {
 	private String idProduto;
 	private String nome;
 	private CategoriaProduto categoria;
-	private String descrição;
+	private String descricao;
 	
 	
 	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descrição) {
@@ -13,7 +13,7 @@ public class Produto {
 		this.idProduto = idProduto;
 		this.nome = nome;
 		this.categoria = categoria;
-		this.descrição = descrição;
+		this.descricao = descricao;
 	}
 
 
@@ -48,20 +48,18 @@ public class Produto {
 
 
 	public String getDescrição() {
-		return descrição;
+		return descricao;
 	}
 
 
 	public void setDescrição(String descrição) {
-		this.descrição = descrição;
+		this.descricao = descricao;
 	}
 
 
 	@Override
-	public String toString() {
-		return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", categoria=" + categoria + ", descrição="
-				+ descrição + "]";
-	}
+	public String toString() { 
+		return "Nome: " + nome + "\nCategoria: " + categoria + "\nDescrição: " + descricao; }
 	
 	
 

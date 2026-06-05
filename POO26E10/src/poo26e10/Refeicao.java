@@ -54,9 +54,7 @@ public class Refeicao {
 		@Override
 			public String toString() {
 			return produto.getNome() + "\nPreço: " + preco + "€\nDisponível: " + quantDisponivel;
-		}
-	
-		
+		}	
 }
 
 		

@@ -14,6 +14,7 @@ public class Produto {
 		this.nome = nome;
 		this.categoria = categoria;
 		this.descricao = descricao;
+
 	}
 
 
@@ -56,10 +57,10 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-
 	@Override
 	public String toString() { 
 		return "Nome: " + nome + "\nCategoria: " + categoria + "\nDescrição: " + descricao; }
+
 	
 	
 

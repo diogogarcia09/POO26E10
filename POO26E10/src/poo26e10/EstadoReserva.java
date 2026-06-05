@@ -5,5 +5,5 @@ public enum EstadoReserva {
 	Paga,
 	Cancelada,
 	Pronta,
-	levantada
+	Levantada
 }

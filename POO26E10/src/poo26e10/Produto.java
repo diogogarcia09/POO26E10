@@ -52,15 +52,13 @@ public class Produto {
 	}
 
 
-	public void setDescrição(String descricao) {
-		this.descricao = descricao;
+	public void setDescrição(String descrição) {
+		this.descricao = descrição;
 	}
 
 
 	@Override
-	public String toString() { 
-		return "Nome: " + nome + "\nCategoria: " + categoria + "\nDescrição: " + descricao; 
-	}
+	public String toString() { return "Nome: " + nome + "\nCategoria: " + categoria + "\nDescrição: " + descricao; }
 	
 	
 

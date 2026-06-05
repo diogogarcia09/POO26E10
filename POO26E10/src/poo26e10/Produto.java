@@ -1,0 +1,68 @@
+package poo26e10;
+
+public class Produto {
+	
+	private String idProduto;
+	private String nome;
+	private CategoriaProduto categoria;
+	private String descrição;
+	
+	
+	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descrição) {
+		super();
+		this.idProduto = idProduto;
+		this.nome = nome;
+		this.categoria = categoria;
+		this.descrição = descrição;
+	}
+
+
+	public String getIdProduto() {
+		return idProduto;
+	}
+
+
+	public void setIdProduto(String idProduto) {
+		this.idProduto = idProduto;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public CategoriaProduto getCategoria() {
+		return categoria;
+	}
+
+
+	public void setCategoria(CategoriaProduto categoria) {
+		this.categoria = categoria;
+	}
+
+
+	public String getDescrição() {
+		return descrição;
+	}
+
+
+	public void setDescrição(String descrição) {
+		this.descrição = descrição;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", categoria=" + categoria + ", descrição="
+				+ descrição + "]";
+	}
+	
+	
+
+}

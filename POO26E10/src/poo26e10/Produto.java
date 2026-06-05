@@ -8,13 +8,12 @@ public class Produto {
 	private String descricao;
 	
 	
-	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descrição) {
+	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descrição, String descricao) {
 		super();
 		this.idProduto = idProduto;
 		this.nome = nome;
 		this.categoria = categoria;
 		this.descricao = descricao;
-
 	}
 
 
@@ -48,19 +47,18 @@ public class Produto {
 	}
 
 
-	public String getDescrição() {
+	public String getDescricao() {
 		return descricao;
 	}
 
 
-	public void setDescrição(String descrição) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
-	@Override
-	public String toString() { 
-		return "Nome: " + nome + "\nCategoria: " + categoria + "\nDescrição: " + descricao; }
 
+	@Override
+	public String toString() { return "Nome: " + nome + "\nCategoria: " + categoria + "\nDescrição: " + descricao; }
 	
 	
 

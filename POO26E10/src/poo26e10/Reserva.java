@@ -119,6 +119,6 @@ public class Reserva {
 		@Override
 		public String toString() {
 			    return "Reserva: " + idReserva + "\nRefeição: " + refeicao.getProduto().getNome() + "\nEstado: " + estado + "\nValor: " + valor + "€";
-		}
+	}
 		 
 }

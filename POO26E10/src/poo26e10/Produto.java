@@ -8,12 +8,11 @@ public class Produto {
 	private String descricao;
 	
 	
-	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descrição, String descricao) {
-		super();
-		this.idProduto = idProduto;
-		this.nome = nome;
-		this.categoria = categoria;
-		this.descricao = descricao;
+	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descricao) {
+	    this.idProduto = idProduto;
+	    this.nome = nome;
+	    this.categoria = categoria;
+	    this.descricao = descricao;
 	}
 
 

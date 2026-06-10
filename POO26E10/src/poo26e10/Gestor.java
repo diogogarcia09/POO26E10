@@ -84,20 +84,8 @@ public class Gestor {
     public void cancelarReserva(Reserva reserva) {
         reserva.cancelar();
     }
-//consultar resumo das receitas
+//consultar resumo das receitas (vazio porque a classe Gestor nao tem acesso ao scanner)
     public void consultarResumoReceitas() {
-        double total = 0;
-        for (Utilizador u : utilizadores) {
-            if (u instanceof Estudante) {
-                Estudante e = (Estudante) u;
-                for (Reserva r : e.getReservas()) {
-                    if (r.getEstado() == EstadoReserva.Paga || r.getEstado() == EstadoReserva.Levantada) {
-                        total += r.getValor();
-                    }
-                }
-            }
-        }
-        System.out.println("Total de receitas: " + total + "€");
     }
 //consultar adesao por categoria
     public void consultarAdesaoPorCategoria() {

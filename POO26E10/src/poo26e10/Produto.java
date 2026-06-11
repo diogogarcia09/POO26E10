@@ -8,12 +8,11 @@ public class Produto {
 	private String descricao;
 	
 	
-	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descrição) {
-		super();
-		this.idProduto = idProduto;
-		this.nome = nome;
-		this.categoria = categoria;
-		this.descricao = descrição;
+	public Produto(String idProduto, String nome, CategoriaProduto categoria, String descricao) {
+	    this.idProduto = idProduto;
+	    this.nome = nome;
+	    this.categoria = categoria;
+	    this.descricao = descricao;
 	}
 
 
@@ -47,13 +46,13 @@ public class Produto {
 	}
 
 
-	public String getDescrição() {
+	public String getDescricao() {
 		return descricao;
 	}
 
 
-	public void setDescrição(String descrição) {
-		this.descricao = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 

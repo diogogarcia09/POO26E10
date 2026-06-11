@@ -12,17 +12,15 @@ public class Reserva {
 	    private Refeicao refeicao;
 	    
 	    
-		public Reserva(String idReserva, Date dataReserva, EstadoReserva estado, String idPagamento, double valor,
-				Date dataPagamento, Refeicao refeicao) {
-			
-			this.idReserva = idReserva;
-			this.dataReserva = dataReserva;
-			this.estado = estado;
-			this.idPagamento = idPagamento;
-			this.valor = valor;
-			this.dataPagamento = dataPagamento;
-			this.refeicao = refeicao;
-		}
+	    public Reserva(String idReserva, Date dataReserva, double valor, Refeicao refeicao) {
+	        this.idReserva = idReserva;
+	        this.dataReserva = dataReserva;
+	        this.valor = valor;
+	        this.refeicao = refeicao;
+	        this.estado = EstadoReserva.Pendente;
+	        this.idPagamento = null;
+	        this.dataPagamento = null;
+	    }
 	    
 	    
 	    //confirmar reserva
@@ -58,7 +56,7 @@ public class Reserva {
 		 
 		 public void marcarLevantada() {
 		        if (estado == EstadoReserva.Pronta) {
-		            estado = EstadoReserva.Levantada;
+		        	estado = EstadoReserva.Levantada;
 		            System.out.println("Reserva " + idReserva + " levantada.");
 		        } else {
 		            System.out.println("A reserva não pode ser marcada como levantada.");

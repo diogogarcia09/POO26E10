@@ -95,13 +95,16 @@ public class Utilizador {
 	public void setBloqueado(boolean bloqueado) {
 		this.bloqueado = bloqueado;
 	}
+	
+	public static boolean validarEmail(String email) {
+	    return email.contains("@") && email.contains(".");
+	}
 
 
 	@Override
 	public String toString() {
 	    return "Nome: " + nome + "\nID: " + numId + "\nEmail: " + email + "\nTipo: " + tipo;
 	}
-	
 	
 
 }
